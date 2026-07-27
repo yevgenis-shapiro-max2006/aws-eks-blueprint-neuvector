@@ -22,23 +22,13 @@ module "local-exec" {
   depends_on = [module.kong]
 }
 
-module "minio" {
-  source = "./modules/minio"
-  depends_on = [module.kong]
-}
-
-module "argo-events" {
-  source = "./modules/argo-events"
-  depends_on = [module.minio]
+module "neuvector" {
+  source = "./modules/neuvector"
+  depends_on = [module.local-exec]
 }
 
 module "ingress" {
   source = "./modules/ingress"
-  depends_on = [module.argo-events]
-}
-
-module "debezium" {
-  source = "./modules/debezium"
-  depends_on = [module.ingress]
+  depends_on = [module.neuvector]
 }
 
