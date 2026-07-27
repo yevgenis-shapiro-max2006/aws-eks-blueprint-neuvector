@@ -1,0 +1,6 @@
+controller:
+  replicas: 1
+enforcer:
+  tolerations:
+    - key: "node-role.kubernetes.io/control-plane"
+      effect: "NoSchedule"
