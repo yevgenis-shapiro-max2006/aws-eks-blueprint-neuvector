@@ -17,14 +17,14 @@ module "kong" {
   depends_on = [module.httpd]
 }
 
-module "local-exec" {
-  source = "./modules/local-exec"
+module "kong-exec" {
+  source = "./modules/kong-exec"
   depends_on = [module.kong]
 }
 
 module "neuvector" {
   source = "./modules/neuvector"
-  depends_on = [module.local-exec]
+  depends_on = [module.kong-exec]
 }
 
 module "ingress" {
