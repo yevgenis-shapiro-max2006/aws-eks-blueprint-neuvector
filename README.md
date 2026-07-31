@@ -1,8 +1,8 @@
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7db668b7-46a4-40b1-9866-12edb25901d7" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/de4ece14-4524-4da8-9d46-faa1ca28d59a" />
 
 
 
-## AWS | EKS Debezium
+## AWS | EKS NeuVector 
 Debezium is an open source project that provides a low latency data streaming platform for change data capture (CDC). You set up and configure Debezium to monitor your databases, and then your applications consume events for each row-level change made to the database. Only committed changes are visible, so your application doesn't have to worry about transactions or changes that are rolled back. Debezium provides a single model of all change events, so your application does not have to worry about the intricacies of each kind of database management system
 
 
