@@ -3,18 +3,16 @@
 
 
 ## AWS | EKS NeuVector 
-Debezium is an open source project that provides a low latency data streaming platform for change data capture (CDC). You set up and configure Debezium to monitor your databases, and then your applications consume events for each row-level change made to the database. Only committed changes are visible, so your application doesn't have to worry about transactions or changes that are rolled back. Debezium provides a single model of all change events, so your application does not have to worry about the intricacies of each kind of database management system
-
+NeuVector is an open-source, Kubernetes-native container security platform maintained by SUSE. It provides end-to-end security across the container lifecycle, from image scanning in CI/CD to runtime protection in production.
 
 
 🎯 Architecture Overview
 ```
 ✅ VPC containing , Public+Private Subnets , NAT Gateway
 ✅ EKS Cluster Provisioner Workflow 
-✅ Minio S3 Object Storage 
-✅ Velero Disaster Recovery
-✅ Velero UI Interface
-✅ Local Exec ( Logical Workloads )
+✅ MArgo Events
+✅ Minio Object Storage
+✅ Neuvector
 ```
 
 
