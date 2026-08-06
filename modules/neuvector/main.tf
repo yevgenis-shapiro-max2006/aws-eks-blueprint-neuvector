@@ -6,7 +6,7 @@ resource "helm_release" "neuvector" {
 
   repository = "https://neuvector.github.io/neuvector-helm/"
   chart      = "core"
-  version    = "2.8.2"
+  version    = "2.11.0"
 
   values = [yamlencode({
     rbac = true
