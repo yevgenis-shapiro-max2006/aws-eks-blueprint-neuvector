@@ -1,3 +1,4 @@
+
 resource "kubernetes_ingress_v1" "kong_ingress" {
   metadata {
     name      = "${var.name}-ingress"
